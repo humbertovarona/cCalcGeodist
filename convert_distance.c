@@ -3,7 +3,7 @@ double convert_distance(double distance, char* unit) {
         return distance * 111.12;
     } else if (strcmp(unit, "miles") == 0) {
         return distance * 69.046766881413;
-    } else if (strcmp(unit, "nautical miles") == 0) {
+    } else if (strcmp(unit, "nm") == 0) {
         return distance * 60;
     } else {
         printf("Invalid unit. Supported units are 'km', 'miles', and 'nm'.\n");
