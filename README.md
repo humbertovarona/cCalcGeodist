@@ -61,9 +61,11 @@ Compute the distance between two geographic points (C code)
 double lat1=-1, lon1=-30, lat2=-2, lon2=-30, distance;
 char unit[20];
 
- distance = calculate_distance(lat1, lon1, lat2, lon2);
+distance = calculate_distance(lat1, lon1, lat2, lon2);
  
- printf("Enter the unit to convert to (km, miles, nm): ");
- scanf("%s", unit);
- distance = convert_distance(distance, unit);
+printf("Enter the unit to convert to (km, miles, nm): ");
+scanf("%s", unit);
+distance = convert_distance(distance, unit);
+
+printf("The distance between the two points is approximately %.2f %s.\n", distance, unit);
 ```
